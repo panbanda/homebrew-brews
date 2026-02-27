@@ -1,15 +1,15 @@
 class Higgs < Formula
   desc "Local LLM inference server for Apple Silicon using MLX"
   homepage "https://github.com/panbanda/higgs"
-  version "0.1.13"
+  version "0.1.14"
   license "MIT OR Apache-2.0"
 
   depends_on :macos
   depends_on arch: :arm64
   depends_on "huggingface-cli"
 
-  url "https://github.com/panbanda/higgs/releases/download/higgs-v0.1.13/higgs_0.1.13_aarch64-apple-darwin.tar.gz"
-  sha256 "3f64b0cbbe0f0561557973e25dace2fe9d2cd42f6ad407b9178b61f976e62408"
+  url "https://github.com/panbanda/higgs/releases/download/higgs-v0.1.14/higgs_0.1.14_aarch64-apple-darwin.tar.gz"
+  sha256 "5158aba86b8380c1081f43f41c5b09a22e849603ba56372063b3e893b68776d8"
 
   def install
     bin.install "higgs"
