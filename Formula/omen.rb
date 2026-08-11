@@ -1,26 +1,26 @@
 class Omen < Formula
   desc "Multi-language code analysis CLI"
   homepage "https://github.com/panbanda/omen"
-  version "4.26.0"
+  version "4.26.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/panbanda/omen/releases/download/omen-v4.26.0/omen_4.26.0_aarch64-apple-darwin.tar.gz"
-      sha256 "a5eb43b388066a2ffd28795b32f1658496d88cf4ff35a7b44596e97fcc789f6f"
+      url "https://github.com/panbanda/omen/releases/download/omen-v4.26.1/omen_4.26.1_aarch64-apple-darwin.tar.gz"
+      sha256 "89e9fb4e0e3c612240f3c76d4d4ff4da6210714f0b108ad6386cd92b0e808bf0"
     else
-      url "https://github.com/panbanda/omen/releases/download/omen-v4.26.0/omen_4.26.0_x86_64-apple-darwin.tar.gz"
-      sha256 "90d25d37025c4c3d658e553bfa9fd5f1d80afbf261f660e3d88d2364c3e85f17"
+      url "https://github.com/panbanda/omen/releases/download/omen-v4.26.1/omen_4.26.1_x86_64-apple-darwin.tar.gz"
+      sha256 "b4f4e9889dc82719a22f53a5258f5eed4aa16df1725d78eed246f721ab38bfab"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/panbanda/omen/releases/download/omen-v4.26.0/omen_4.26.0_aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "a22995d90b4117cf7d8c95d512508fb1c36099e28390260af21ee7d24909f0e5"
+      url "https://github.com/panbanda/omen/releases/download/omen-v4.26.1/omen_4.26.1_aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "fbefeec95b0e31a10e3b96e424cb5ac8664628fac2debf64b654bae4d30e9845"
     else
-      url "https://github.com/panbanda/omen/releases/download/omen-v4.26.0/omen_4.26.0_x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "f2b7395f348ab1d4e7679ffde7b9b41c9dc925e98a63872a7625fe9afd18d7ce"
+      url "https://github.com/panbanda/omen/releases/download/omen-v4.26.1/omen_4.26.1_x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "f90be10bd2e077de7249e2ac0e74efc5d94071f194da70e6491a4b7e2a644e46"
     end
   end
 
