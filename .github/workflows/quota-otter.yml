@@ -13,7 +13,7 @@ concurrency:
   cancel-in-progress: false
 jobs:
   verify:
-    runs-on: macos-15
+    runs-on: macos-26
     outputs:
       has_cask: ${{ steps.cask.outputs.present }}
     steps:
