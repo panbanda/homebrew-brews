@@ -64,7 +64,7 @@ jobs:
   publish:
     needs: verify
     if: ${{ needs.verify.outputs.has_cask == 'true' }}
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-26.04
     permissions:
       contents: write
     steps:
