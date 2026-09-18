@@ -55,7 +55,7 @@ jobs:
         id: cask
         run: |
           if test -f Casks/quota-otter.rb; then echo 'present=true' >> "$GITHUB_OUTPUT"; fi
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         if: ${{ steps.cask.outputs.present == 'true' }}
         with:
           name: tested-quota-otter-cask
@@ -74,7 +74,7 @@ jobs:
       - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
         with:
           node-version: 24
-      - uses: actions/download-artifact@v4
+      - uses: actions/download-artifact@v8
         with:
           name: tested-quota-otter-cask
           path: verified
