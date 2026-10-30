@@ -22,7 +22,7 @@ jobs:
           persist-credentials: false
       - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
         with:
-          node-version: 24
+          node-version: 26
       - name: Generate cask from a complete published release
         run: node scripts/update-quota-otter.mjs
         env:
@@ -73,7 +73,7 @@ jobs:
           persist-credentials: false
       - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
         with:
-          node-version: 24
+          node-version: 26
       - uses: actions/download-artifact@v4
         with:
           name: tested-quota-otter-cask
